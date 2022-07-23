@@ -1,0 +1,13 @@
+.input {
+    padding: 6px 12px;
+    border: 1px solid teal;
+    color: teal;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.input:focus {
+    outline: none;
+    border-width: 2px;
+    padding: 5px 11px;
+}
