@@ -6,13 +6,24 @@ class Todos {
         { id: 0, description: "Погулять с собакой", completed: false },
         { id: 1, description: "Полить цветы", completed: false },
         { id: 2, description: "Покормить кота", completed: false },
-        { id: 3, description: "Помыть посуду", completed: false },
+        { id: 3, description: "Помыть посуду", completed: true },
     ];
 
+    // Input: Add Task
     taskInput: string = "";
+
+    // Filter: query
+    query: string = "";
+
+    // Filter: taskCompleted?
+    showOnlyCompleted: boolean = false;
 
     constructor() {
         makeAutoObservable(this);
+    }
+
+    setShowOnlyCompletedState(value: boolean) {
+        this.showOnlyCompleted = value;
     }
 
     changeCompletionState(id: number) {
@@ -21,16 +32,22 @@ class Todos {
     }
 
     addTask(text: string) {
-        const newTodo: Todo = {
-            id: Number(new Date()),
-            description: text,
-            completed: false,
-        };
-        this.todoList.push(newTodo)
+        if (text !== "") {
+            const newTodo: Todo = {
+                id: Number(new Date()),
+                description: text,
+                completed: false,
+            };
+            this.todoList.push(newTodo);
+        }
     }
 
     taskChangeInput(value: string) {
         this.taskInput = value;
+    }
+
+    queryChangeInput(value: string) {
+        this.query = value;
     }
 }
 

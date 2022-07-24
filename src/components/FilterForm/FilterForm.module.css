@@ -1,0 +1,37 @@
+.form_toggle {
+	display: inline-block;
+	overflow: hidden;
+}
+.form_toggle_item {
+	float: left;
+	display: inline-block;
+}
+.form_toggle_item input[type=radio] {
+	display: none;
+}
+.form_toggle_item label {
+	display: inline-block;
+	font-size: 1em;
+	padding: 6px 12px;
+	line-height: 1.1em;
+	border: 1px solid teal;
+	border-right: none;
+	cursor: pointer;
+	user-select: none;
+}
+
+.form_toggle .item_1 label {
+	border-radius: 6px 0 0 6px;
+}
+.form_toggle .item_2 label {
+	border-radius: 0 6px 6px 0;
+	border-right: 1px solid teal;
+}
+
+/* Checked */
+.form_toggle .item_1 input[type=radio]:checked + label {
+	background: #5fdf56;
+}
+.form_toggle .item_2 input[type=radio]:checked + label {
+	background: #8fb83e;
+}

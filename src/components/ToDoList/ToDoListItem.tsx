@@ -9,7 +9,7 @@ interface ToDoListItemProps {
     todo: Todo;
 }
 
-const ToDoListItem = observer(({ todo }: ToDoListItemProps) => {
+const ToDoListItem = observer(function ToDoListItem({ todo }: ToDoListItemProps) {
     const rootClasses = classNames(styles.item, {
         [styles.active]: todo.completed,
     });
