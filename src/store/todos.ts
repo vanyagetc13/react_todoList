@@ -49,6 +49,19 @@ class Todos {
     queryChangeInput(value: string) {
         this.query = value;
     }
+
+    // Getting Lists:
+    get listByQuery() {
+        if (!this.query) return this.todoList;
+        return this.todoList.filter((e) =>
+            e.description.toLowerCase().includes(this.query.toLowerCase())
+        );
+    }
+
+    get listByAllFilters () {
+        if(!this.showOnlyCompleted) return this.listByQuery
+        return this.listByQuery.filter(e=>e.completed)
+    }
 }
 
 export default new Todos();

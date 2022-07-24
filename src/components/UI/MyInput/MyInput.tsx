@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./MyInput.module.css";
-import { observer } from "mobx-react-lite";
 
 interface InputProps {
     type?: string;

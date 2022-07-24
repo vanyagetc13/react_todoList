@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React from "react";
 import styles from "./ToDoList.module.css";
 import { Todo } from "./../../types";
 import todos from "../../store/todos";
