@@ -1,7 +1,7 @@
 .input {
     padding: 6px 12px;
-    border: 1px solid teal;
-    color: teal;
+    border: 1px solid rgba(0, 128, 128, 0.8);
+    color: rgba(0, 128, 128, 0.8);
     border-radius: 5px;
     font-size: 1em;
 }

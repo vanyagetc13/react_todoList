@@ -1,7 +1,7 @@
 .button {
     padding: 6px 12px;
-    border: 1px solid rgba(0, 128, 128, 0.8);
-    color: rgba(0, 128, 128, 0.8);
+    border: 1px solid #f65;
+    color: #f65;
     cursor: pointer;
     background-color: #FFF;
     transition: all 0.5s;
@@ -10,6 +10,6 @@
 }
 
 .button:hover {
-    background-color: rgba(0, 128, 128, 0.8);
-    color: #fff;
+    background-color: #f65;
+    color: #FFF;
 }

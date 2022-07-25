@@ -1,9 +1,8 @@
 import React from 'react';
 import { ButtonProps } from '../../../types';
-import styles from "./PrimaryButton.module.css"
+import styles from "./WarningButton.module.css"
 
-
-const PrimaryButton = ({children, click}:ButtonProps) => {
+const SecondaryButton = ({children, click}:ButtonProps) => {
     return (
         <button onClick={click} className={styles.button}>
             {children}
@@ -11,4 +10,4 @@ const PrimaryButton = ({children, click}:ButtonProps) => {
     );
 };
 
-export default PrimaryButton;
+export default SecondaryButton;

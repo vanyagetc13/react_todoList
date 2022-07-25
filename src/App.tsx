@@ -10,7 +10,7 @@ const App = observer(() => {
     return (
         <div className="App">
             <ToDoHeader />
-            <ColoredHRLine />
+            <ColoredHRLine color="rgba(0, 128, 128, 0.8)"/>
             <ToDoList todoList={todos.listByAllFilters} />
         </div>
     );

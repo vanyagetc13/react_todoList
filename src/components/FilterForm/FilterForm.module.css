@@ -14,7 +14,7 @@
 	font-size: 1em;
 	padding: 6px 12px;
 	line-height: 1.1em;
-	border: 1px solid teal;
+	border: 1px solid rgba(0, 128, 128, 0.8);
 	border-right: none;
 	cursor: pointer;
 	user-select: none;
@@ -25,13 +25,14 @@
 }
 .form_toggle .item_2 label {
 	border-radius: 0 6px 6px 0;
-	border-right: 1px solid teal;
+	border-right: 1px solid rgba(0, 128, 128, 0.8);
 }
 
 /* Checked */
 .form_toggle .item_1 input[type=radio]:checked + label {
-	background: #5fdf56;
+	background: rgba(0, 128, 128, 0.8);
+	color: #fff;
 }
 .form_toggle .item_2 input[type=radio]:checked + label {
-	background: #8fb83e;
+	background: #a7ec1f;
 }

@@ -8,18 +8,21 @@
 }
 
 .item {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 6px 13px;
-    border: 1px solid teal;
-    color: teal;
+    border: 1px solid rgba(0, 128, 128, 0.8);
+    color: rgba(0, 128, 128, 0.8);
     border-radius: 10px;
     background-color: #FFF;
     cursor: pointer;
     word-break: break-all;
+    line-height: 1em;
 }
 
 .active {
-    background-color: teal;
+    background-color: rgba(0, 128, 128, 0.8);
     color: #FFF;
     border-color: #FFF;
 }

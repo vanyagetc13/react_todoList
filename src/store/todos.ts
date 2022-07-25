@@ -62,6 +62,12 @@ class Todos {
         if(!this.showOnlyCompleted) return this.listByQuery
         return this.listByQuery.filter(e=>e.completed)
     }
+
+    // Deleting Task By ID:
+
+    deleteTask(id: number) {
+        this.todoList = this.todoList.filter(e=>e.id !== id)
+    }
 }
 
 export default new Todos();
